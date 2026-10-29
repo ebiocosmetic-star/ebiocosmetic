@@ -1,0 +1,67 @@
+/* Ebio Cosmetic - Custom Stylesheet */
+
+@layer utilities {
+  .text-shadow {
+    text-shadow: 0 2px 4px rgba(0,0,0,0.1);
+  }
+}
+
+/* Custom subtle scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #fbf9f5;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #9ec6b0;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4f886f;
+}
+
+/* Glassmorphism helpers */
+.glass-card {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(197, 223, 208, 0.4);
+}
+
+/* Soft Animations */
+@keyframes floatSlow {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+.animate-float {
+  animation: floatSlow 4s ease-in-out infinite;
+}
+
+/* Modal Transition Styles */
+#productModal.modal-open {
+  display: flex !important;
+  opacity: 1 !important;
+}
+
+#productModal.modal-open > div {
+  transform: scale(1) !important;
+}
+
+/* FAQ Accordion Active Arrow */
+.faq-btn.active .faq-icon {
+  transform: rotate(180deg);
+}
+
+/* Smooth Focus Rings */
+input:focus, select:focus, textarea:focus, button:focus {
+  outline: none;
+}

@@ -1,0 +1,1299 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ebio Cosmetic | Jabones Artesanales Amazónicos · Comunidad Nativa de Infierno</title>
+  <meta name="description" content="Emprendimiento de jabones artesanales elaborados con copaiba, capirona y sangre de grado desde la Comunidad Nativa de Infierno, Madre de Dios. Cosmética natural, sostenible y comunitaria.">
+  
+  <!-- Favicon -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220%22%20%220%22%20100%22%20100%22><text y=%22.9em%22 font-size=%2290%22>🌿</text></svg>">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,400;1,600&display=swap" rel="stylesheet">
+  
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class',
+      theme: {
+        extend: {
+          colors: {
+            selva: {
+              50: '#f2f8f4',
+              100: '#e1efe6',
+              200: '#c5dfd0',
+              300: '#9ec6b0',
+              400: '#72a68c',
+              500: '#4f886f',
+              600: '#3c6e59',
+              700: '#325848',
+              800: '#2a473b',
+              900: '#1b3027',
+              950: '#0e1d17',
+            },
+            copaiba: {
+              light: '#fbf3dc',
+              DEFAULT: '#d49b37',
+              dark: '#966719',
+            },
+            sangre: {
+              light: '#fce8e6',
+              DEFAULT: '#b93226',
+              dark: '#7e1d15',
+            },
+            capirona: {
+              light: '#f7efe9',
+              DEFAULT: '#8b5a3e',
+              dark: '#583622',
+            },
+            amazonia: '#133527',
+            tierra: '#2d241e',
+            crema: '#fbf9f5'
+          },
+          fontFamily: {
+            sans: ['Outfit', 'sans-serif'],
+            serif: ['"Playfair Display"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+  
+  <!-- Lucide Icons -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-crema text-tierra font-sans antialiased selection:bg-selva-500 selection:text-white">
+
+  <!-- Top Announcement Bar -->
+  <div class="bg-amazonia text-emerald-100 text-xs py-2 px-4 border-b border-emerald-900/50">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between items-center text-center sm:text-left gap-1">
+      <div class="flex items-center gap-2">
+        <span class="inline-block w-2 h-2 rounded-full bg-emerald-400 animate-pulse"></span>
+        <span>🌿 <strong>Ebio Cosmetic:</strong> Cosmética viva, sostenible y ancestral desde la Comunidad Nativa de Infierno</span>
+      </div>
+      <div class="flex items-center gap-4 text-[11px] text-emerald-300">
+        <span class="flex items-center gap-1"><i data-lucide="map-pin" class="w-3 h-3"></i> Madre de Dios, Perú</span>
+        <span class="hidden md:inline">|</span>
+        <span class="hidden md:flex items-center gap-1"><i data-lucide="heart-handshake" class="w-3 h-3"></i> 100% Comercio Justo Comunitario</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Navigation Bar -->
+  <header class="sticky top-0 z-40 bg-crema/90 backdrop-blur-md border-b border-amber-900/10 transition-all duration-300" id="navbar">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- Brand Logo -->
+        <a href="#inicio" class="flex items-center gap-3 group">
+          <div class="w-12 h-12 rounded-2xl bg-gradient-to-br from-selva-700 via-selva-800 to-amazonia flex items-center justify-center text-white shadow-md shadow-selva-900/20 group-hover:scale-105 transition-transform duration-300">
+            <i data-lucide="sparkles" class="w-6 h-6 text-copaiba"></i>
+          </div>
+          <div>
+            <div class="flex items-center gap-1">
+              <span class="font-serif text-2xl font-bold tracking-tight text-amazonia group-hover:text-selva-700 transition-colors">Ebio</span>
+              <span class="font-serif text-2xl font-light italic text-copaiba">Cosmetic</span>
+            </div>
+            <p class="text-[10px] uppercase tracking-widest text-selva-600 font-semibold">Jabones de la Amazonía</p>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-tierra/80">
+          <a href="#inicio" class="hover:text-selva-700 transition-colors py-1 border-b-2 border-transparent hover:border-selva-600">Inicio</a>
+          <a href="#historia" class="hover:text-selva-700 transition-colors py-1 border-b-2 border-transparent hover:border-selva-600">Nuestra Historia</a>
+          <a href="#ingredientes" class="hover:text-selva-700 transition-colors py-1 border-b-2 border-transparent hover:border-selva-600">Ingredientes Ancestrales</a>
+          <a href="#productos" class="hover:text-selva-700 transition-colors py-1 border-b-2 border-transparent hover:border-selva-600">Jabones Artesanales</a>
+          <a href="#proceso" class="hover:text-selva-700 transition-colors py-1 border-b-2 border-transparent hover:border-selva-600">Proceso Artesanal</a>
+          <a href="#impacto" class="hover:text-selva-700 transition-colors py-1 border-b-2 border-transparent hover:border-selva-600">Impacto y Conservación</a>
+          <a href="#contacto" class="hover:text-selva-700 transition-colors py-1 border-b-2 border-transparent hover:border-selva-600">Contacto</a>
+        </nav>
+
+        <!-- CTA Action Buttons -->
+        <div class="hidden sm:flex items-center gap-3">
+          <a href="https://github.com/ebiocosmetic-star/ebiocosmetic" target="_blank" rel="noopener noreferrer" 
+             class="p-2.5 rounded-full text-tierra/70 hover:text-amazonia hover:bg-selva-100 transition-all" title="Ver en GitHub">
+            <i data-lucide="github" class="w-5 h-5"></i>
+          </a>
+          <a href="#productos" 
+             class="inline-flex items-center gap-2 px-5 py-2.5 rounded-full bg-amazonia text-white font-medium text-sm hover:bg-selva-800 shadow-md shadow-amazonia/20 hover:shadow-lg transition-all transform hover:-translate-y-0.5">
+            <i data-lucide="shopping-bag" class="w-4 h-4 text-copaiba"></i>
+            <span>Ver Catálogo</span>
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle Button -->
+        <button id="mobileMenuBtn" type="button" class="lg:hidden p-2.5 rounded-xl text-tierra hover:bg-selva-100 transition-colors" aria-label="Abrir menú">
+          <i data-lucide="menu" id="menuIcon" class="w-6 h-6"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation Drawer -->
+    <div id="mobileMenu" class="hidden lg:hidden bg-crema border-b border-amber-900/10 px-6 py-6 space-y-4">
+      <a href="#inicio" class="block text-base font-medium text-tierra hover:text-selva-700 mobile-link">Inicio</a>
+      <a href="#historia" class="block text-base font-medium text-tierra hover:text-selva-700 mobile-link">Nuestra Historia</a>
+      <a href="#ingredientes" class="block text-base font-medium text-tierra hover:text-selva-700 mobile-link">Ingredientes Ancestrales</a>
+      <a href="#productos" class="block text-base font-medium text-tierra hover:text-selva-700 mobile-link">Jabones Artesanales</a>
+      <a href="#proceso" class="block text-base font-medium text-tierra hover:text-selva-700 mobile-link">Proceso Artesanal</a>
+      <a href="#impacto" class="block text-base font-medium text-tierra hover:text-selva-700 mobile-link">Impacto y Conservación</a>
+      <a href="#contacto" class="block text-base font-medium text-tierra hover:text-selva-700 mobile-link">Contacto</a>
+      <div class="pt-4 border-t border-amber-900/10 flex flex-col gap-3">
+        <a href="#productos" class="w-full text-center py-3 rounded-full bg-amazonia text-white font-medium text-sm mobile-link">
+          Ver Catálogo de Jabones
+        </a>
+        <a href="https://github.com/ebiocosmetic-star/ebiocosmetic" target="_blank" class="w-full text-center py-2.5 rounded-full border border-amazonia/30 text-amazonia font-medium text-sm flex items-center justify-center gap-2">
+          <i data-lucide="github" class="w-4 h-4"></i>
+          <span>Repositorio GitHub</span>
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section id="inicio" class="relative pt-12 pb-24 md:pt-20 md:pb-32 overflow-hidden">
+    <!-- Ambient Background Gradients -->
+    <div class="absolute inset-0 -z-10 pointer-events-none">
+      <div class="absolute -top-24 right-0 w-96 h-96 bg-selva-200/40 rounded-full blur-3xl"></div>
+      <div class="absolute top-1/2 left-0 w-[500px] h-[500px] bg-copaiba-light/50 rounded-full blur-3xl"></div>
+      <div class="absolute bottom-0 right-1/4 w-80 h-80 bg-sangre-light/40 rounded-full blur-3xl"></div>
+    </div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
+        
+        <!-- Hero Text Content -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-selva-100 border border-selva-200 text-selva-800 text-xs sm:text-sm font-semibold shadow-sm">
+            <i data-lucide="leaf" class="w-4 h-4 text-selva-600"></i>
+            <span>Comunidad Nativa de Infierno · Madre de Dios</span>
+          </div>
+
+          <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl font-bold tracking-tight text-amazonia leading-[1.15]">
+            La Riqueza Natural de la <span class="italic text-selva-700 underline decoration-copaiba/60 decoration-wavy decoration-2">Amazonía</span> en Jabones Artesanales
+          </h1>
+
+          <p class="text-lg sm:text-xl text-tierra/80 leading-relaxed font-normal">
+            Somos un emprendimiento dedicado a la elaboración de jabones artesanales con 
+            <span class="font-semibold text-amazonia">copaiba</span>, 
+            <span class="font-semibold text-capirona">capirona</span> y 
+            <span class="font-semibold text-sangre">sangre de grado</span>. 
+            Elaboramos cada barra con dedicación, creatividad y amor por lo natural, protegiendo nuestra selva y valorando los saberes de nuestra comunidad indígena.
+          </p>
+
+          <!-- Badges / Highlights -->
+          <div class="flex flex-wrap gap-3 pt-2">
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-white/80 border border-amber-900/10 text-xs font-medium text-tierra/90 shadow-sm">
+              <i data-lucide="check-circle-2" class="w-3.5 h-3.5 text-copaiba"></i> 100% Biodegradable
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-white/80 border border-amber-900/10 text-xs font-medium text-tierra/90 shadow-sm">
+              <i data-lucide="droplet" class="w-3.5 h-3.5 text-selva-600"></i> Sin químicos artificiales
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-white/80 border border-amber-900/10 text-xs font-medium text-tierra/90 shadow-sm">
+              <i data-lucide="shield-check" class="w-3.5 h-3.5 text-sangre"></i> Cosecha responsable
+            </span>
+            <span class="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-lg bg-white/80 border border-amber-900/10 text-xs font-medium text-tierra/90 shadow-sm">
+              <i data-lucide="users" class="w-3.5 h-3.5 text-capirona"></i> Impacto Comunitario
+            </span>
+          </div>
+
+          <!-- Hero Action Buttons -->
+          <div class="flex flex-col sm:flex-row items-stretch sm:items-center gap-4 pt-4">
+            <a href="#productos" class="inline-flex items-center justify-center gap-3 px-8 py-4 rounded-full bg-amazonia text-white font-medium hover:bg-selva-800 shadow-lg shadow-amazonia/25 hover:shadow-xl transition-all transform hover:-translate-y-0.5 text-center">
+              <span>Explorar Jabones</span>
+              <i data-lucide="arrow-right" class="w-5 h-5 text-copaiba"></i>
+            </a>
+            <a href="#historia" class="inline-flex items-center justify-center gap-2 px-8 py-4 rounded-full bg-white/90 text-amazonia border border-selva-300 font-medium hover:bg-selva-50 transition-all text-center">
+              <i data-lucide="book-open" class="w-5 h-5 text-selva-600"></i>
+              <span>Conoce el Proyecto</span>
+            </a>
+          </div>
+
+          <!-- Impact Metrics Quick Peek -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-amber-900/10 text-center sm:text-left">
+            <div>
+              <p class="font-serif text-2xl sm:text-3xl font-bold text-amazonia">3</p>
+              <p class="text-xs text-tierra/70">Bioactivos amazónicos puros</p>
+            </div>
+            <div>
+              <p class="font-serif text-2xl sm:text-3xl font-bold text-selva-700">100%</p>
+              <p class="text-xs text-tierra/70">Artesanal & Natural</p>
+            </div>
+            <div>
+              <p class="font-serif text-2xl sm:text-3xl font-bold text-copaiba-dark">0%</p>
+              <p class="text-xs text-tierra/70">Residuos plásticos</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Hero Visual Showcase Card -->
+        <div class="lg:col-span-5 relative">
+          <div class="relative mx-auto max-w-md lg:max-w-none">
+            
+            <!-- Main Hero Featured Graphic Card -->
+            <div class="rounded-3xl bg-gradient-to-b from-selva-900 via-amazonia to-selva-950 p-8 text-white shadow-2xl relative overflow-hidden border border-emerald-700/30">
+              <div class="absolute -right-12 -top-12 w-48 h-48 bg-copaiba/20 rounded-full blur-2xl"></div>
+              <div class="absolute -left-12 -bottom-12 w-48 h-48 bg-sangre/20 rounded-full blur-2xl"></div>
+              
+              <div class="relative z-10 space-y-6">
+                <div class="flex justify-between items-start">
+                  <span class="px-3 py-1 rounded-full bg-white/10 backdrop-blur-md text-emerald-300 text-xs font-medium border border-white/10">
+                    Trilogía Botánica Amazónica
+                  </span>
+                  <div class="w-10 h-10 rounded-full bg-emerald-800/80 flex items-center justify-center text-copaiba">
+                    <i data-lucide="trees" class="w-5 h-5"></i>
+                  </div>
+                </div>
+
+                <!-- Showcase of the 3 ingredients -->
+                <div class="space-y-4">
+                  <!-- Item 1: Copaiba -->
+                  <div class="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm flex items-center gap-4 hover:bg-white/10 transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-copaiba/20 border border-copaiba/40 flex items-center justify-center text-copaiba flex-shrink-0">
+                      <i data-lucide="droplets" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-serif font-bold text-white text-base">Aceite de Copaiba</h4>
+                      <p class="text-xs text-emerald-200/80">Cicatrizante milenario, calmante y antiséptico para pieles sensibles.</p>
+                    </div>
+                  </div>
+
+                  <!-- Item 2: Capirona -->
+                  <div class="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm flex items-center gap-4 hover:bg-white/10 transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-capirona/30 border border-amber-600/40 flex items-center justify-center text-amber-300 flex-shrink-0">
+                      <i data-lucide="feather" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-serif font-bold text-white text-base">Corteza de Capirona</h4>
+                      <p class="text-xs text-emerald-200/80">Regeneración celular, atenúa manchas y aporta elasticidad natural.</p>
+                    </div>
+                  </div>
+
+                  <!-- Item 3: Sangre de Grado -->
+                  <div class="p-4 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm flex items-center gap-4 hover:bg-white/10 transition-colors">
+                    <div class="w-12 h-12 rounded-xl bg-sangre/30 border border-red-500/40 flex items-center justify-center text-rose-300 flex-shrink-0">
+                      <i data-lucide="shield" class="w-6 h-6"></i>
+                    </div>
+                    <div>
+                      <h4 class="font-serif font-bold text-white text-base">Sangre de Grado</h4>
+                      <p class="text-xs text-emerald-200/80">Poderoso tónico dérmico, colágeno natural y protector ante impurezas.</p>
+                    </div>
+                  </div>
+                </div>
+
+                <!-- Bottom Quote -->
+                <div class="pt-4 border-t border-white/10 text-xs italic text-emerald-100/70 flex items-center gap-2">
+                  <i data-lucide="quote" class="w-4 h-4 text-copaiba flex-shrink-0"></i>
+                  <span>"Cuidamos de la selva para que la selva cuide de tu piel."</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating Badge Card -->
+            <div class="absolute -bottom-6 -left-6 bg-white p-4 rounded-2xl shadow-xl border border-amber-900/10 flex items-center gap-3 max-w-[240px]">
+              <div class="w-10 h-10 rounded-xl bg-selva-100 flex items-center justify-center text-selva-700">
+                <i data-lucide="compass" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <p class="text-xs font-bold text-amazonia">Origen Auténtico</p>
+                <p class="text-[11px] text-tierra/70">Comunidad Nativa Infierno</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Section 1: Detailed Project Description & Roots -->
+  <section id="historia" class="py-20 bg-white border-y border-amber-900/10 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="text-xs uppercase tracking-widest font-bold text-selva-600 bg-selva-100 px-3 py-1 rounded-full">
+          Nuestra Identidad y Vocación
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-amazonia">
+          Nacidos en el Corazón de la Comunidad Nativa de Infierno
+        </h2>
+        <p class="text-tierra/80 text-base sm:text-lg">
+          Un proyecto de bio-cosmética artesanal con profundo arraigo cultural, impulsado por el respeto hacia la Amazonía y sus comunidades vivas.
+        </p>
+      </div>
+
+      <!-- Main Project Description Grid -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Column: Story Card -->
+        <div class="lg:col-span-6 space-y-6">
+          <div class="p-8 rounded-3xl bg-selva-50/70 border border-selva-200/80 shadow-sm space-y-5">
+            <h3 class="font-serif text-2xl font-bold text-amazonia flex items-center gap-2">
+              <i data-lucide="sparkle" class="w-5 h-5 text-copaiba"></i>
+              Nuestra Misión y Filosofía
+            </h3>
+            
+            <p class="text-tierra/90 leading-relaxed">
+              Somos un emprendimiento dedicado a la elaboración de jabones artesanales, inspirados en la riqueza natural de la <strong>Amazonía</strong> y en los ingredientes ancestrales de nuestra <strong>Comunidad Nativa de Infierno</strong>. Elaboramos cada uno de nuestros productos con dedicación, creatividad y amor incondicional por lo natural.
+            </p>
+
+            <p class="text-tierra/90 leading-relaxed">
+              A través de la alquimia vegetal de la <strong>copaiba</strong>, la <strong>capirona</strong> y la <strong>sangre de grado</strong>, unimos la botánica medicinal milenaria con prácticas cosméticas de alta calidad, brindando salud cutánea y bienestar auténtico sin alterar los ecosistemas.
+            </p>
+
+            <blockquote class="p-4 rounded-xl bg-white border-l-4 border-selva-600 italic text-amazonia font-serif text-sm">
+              "Promovemos la participación comunitaria, el intercambio de conocimientos y la valoración de las habilidades artesanales locales, fomentando el uso responsable de los recursos naturales, la reducción de residuos y la conservación de la biodiversidad."
+            </blockquote>
+          </div>
+        </div>
+
+        <!-- Right Column: The 4 Pillars -->
+        <div class="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+          
+          <!-- Pillar 1 -->
+          <div class="p-6 rounded-2xl bg-white border border-amber-900/10 shadow-sm hover:shadow-md transition-shadow space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-selva-100 flex items-center justify-center text-selva-700">
+              <i data-lucide="users-2" class="w-6 h-6"></i>
+            </div>
+            <h4 class="font-serif font-bold text-amazonia text-lg">Participación Comunitaria</h4>
+            <p class="text-xs text-tierra/70 leading-relaxed">
+              Generamos oportunidades de empleo digno para artesanos y familias locales de la comunidad, fortaleciendo el tejido social.
+            </p>
+          </div>
+
+          <!-- Pillar 2 -->
+          <div class="p-6 rounded-2xl bg-white border border-amber-900/10 shadow-sm hover:shadow-md transition-shadow space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-copaiba-light flex items-center justify-center text-copaiba-dark">
+              <i data-lucide="book-marked" class="w-6 h-6"></i>
+            </div>
+            <h4 class="font-serif font-bold text-amazonia text-lg">Saberes Tradicionales</h4>
+            <p class="text-xs text-tierra/70 leading-relaxed">
+              Revalorizamos los conocimientos botánicos de nuestros ancestros, pasados de generación en generación con profundo respeto.
+            </p>
+          </div>
+
+          <!-- Pillar 3 -->
+          <div class="p-6 rounded-2xl bg-white border border-amber-900/10 shadow-sm hover:shadow-md transition-shadow space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-sangre-light flex items-center justify-center text-sangre">
+              <i data-lucide="tree-pine" class="w-6 h-6"></i>
+            </div>
+            <h4 class="font-serif font-bold text-amazonia text-lg">Conservación de Bosques</h4>
+            <p class="text-xs text-tierra/70 leading-relaxed">
+              Extracción no invasiva ni destructiva: cosechamos bioactivos sin talar árboles, protegiendo la biodiversidad de Madre de Dios.
+            </p>
+          </div>
+
+          <!-- Pillar 4 -->
+          <div class="p-6 rounded-2xl bg-white border border-amber-900/10 shadow-sm hover:shadow-md transition-shadow space-y-3">
+            <div class="w-12 h-12 rounded-xl bg-amber-100 flex items-center justify-center text-amber-800">
+              <i data-lucide="recycle" class="w-6 h-6"></i>
+            </div>
+            <h4 class="font-serif font-bold text-amazonia text-lg">Reducción de Residuos</h4>
+            <p class="text-xs text-tierra/70 leading-relaxed">
+              Empaques compostables y biodegradables sin plásticos de un solo uso, impulsando un modelo de economía circular y limpia.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 2: Botanical Ingredients Deep Dive -->
+  <section id="ingredientes" class="py-20 bg-selva-50/50 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="text-xs uppercase tracking-widest font-bold text-copaiba-dark bg-copaiba-light px-3 py-1 rounded-full">
+          Botánica Ancestral
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-amazonia">
+          Los Tres Tesoros de la Amazonía
+        </h2>
+        <p class="text-tierra/80 text-base sm:text-lg">
+          Conoce en profundidad los ingredientes que dan vida y propiedades terapéuticas únicas a nuestros jabones artesanales.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        
+        <!-- Ingredient 1: Copaiba -->
+        <div class="rounded-3xl bg-white border border-copaiba/20 p-8 shadow-sm hover:shadow-xl transition-all duration-300 relative group flex flex-col justify-between">
+          <div class="space-y-6">
+            <div class="w-14 h-14 rounded-2xl bg-copaiba-light text-copaiba flex items-center justify-center group-hover:scale-110 transition-transform">
+              <i data-lucide="droplets" class="w-7 h-7"></i>
+            </div>
+            
+            <div>
+              <span class="text-xs font-semibold text-copaiba-dark uppercase tracking-wider">Resina Sagrada</span>
+              <h3 class="font-serif text-2xl font-bold text-amazonia mt-1">Copaiba</h3>
+              <p class="text-xs italic text-tierra/60 mt-0.5 font-serif">Copaifera officinalis / reticulata</p>
+            </div>
+
+            <p class="text-sm text-tierra/80 leading-relaxed">
+              Conocida como el <em>"aceite de la vida"</em> por las comunidades amazónicas. Es una resina natural que se extrae mediante un proceso tradicional de goteo en el tronco del árbol vivo sin causarle daño.
+            </p>
+
+            <div class="space-y-2 pt-2 border-t border-amber-900/10">
+              <h5 class="text-xs font-bold uppercase tracking-wider text-amazonia">Propiedades Principales:</h5>
+              <ul class="text-xs text-tierra/80 space-y-1.5">
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-copaiba flex-shrink-0 mt-0.5"></i>
+                  <span><strong>Poderoso antiinflamatorio:</strong> Alivia rojeces, irritación y dermatitis.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-copaiba flex-shrink-0 mt-0.5"></i>
+                  <span><strong>Acción antiséptica:</strong> Purifica poros y regula el exceso de sebo.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-copaiba flex-shrink-0 mt-0.5"></i>
+                  <span><strong>Cicatrizante natural:</strong> Estimula la regeneración del tejido dérmico.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-amber-900/10 text-xs font-medium text-copaiba-dark flex items-center justify-between">
+            <span>Ideal para pieles grasas y sensibles</span>
+            <i data-lucide="sparkles" class="w-4 h-4"></i>
+          </div>
+        </div>
+
+        <!-- Ingredient 2: Capirona -->
+        <div class="rounded-3xl bg-white border border-capirona/20 p-8 shadow-sm hover:shadow-xl transition-all duration-300 relative group flex flex-col justify-between">
+          <div class="space-y-6">
+            <div class="w-14 h-14 rounded-2xl bg-capirona-light text-capirona flex items-center justify-center group-hover:scale-110 transition-transform">
+              <i data-lucide="trees" class="w-7 h-7"></i>
+            </div>
+            
+            <div>
+              <span class="text-xs font-semibold text-capirona uppercase tracking-wider">Corteza Regenerativa</span>
+              <h3 class="font-serif text-2xl font-bold text-amazonia mt-1">Capirona</h3>
+              <p class="text-xs italic text-tierra/60 mt-0.5 font-serif">Calycophyllum spruceanum</p>
+            </div>
+
+            <p class="text-sm text-tierra/80 leading-relaxed">
+              El árbol de tronco verde y brillante que muda periódicamente su propia corteza. Esta asombrosa cualidad biológica se traduce en una potente capacidad de regeneración celular y renovación dérmica.
+            </p>
+
+            <div class="space-y-2 pt-2 border-t border-amber-900/10">
+              <h5 class="text-xs font-bold uppercase tracking-wider text-amazonia">Propiedades Principales:</h5>
+              <ul class="text-xs text-tierra/80 space-y-1.5">
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-capirona flex-shrink-0 mt-0.5"></i>
+                  <span><strong>Efecto despigmentante:</strong> Ayuda a atenuar manchas provocadas por el sol.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-capirona flex-shrink-0 mt-0.5"></i>
+                  <span><strong>Acción reafirmante:</strong> Aporta elasticidad y tonificación natural.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-capirona flex-shrink-0 mt-0.5"></i>
+                  <span><strong>Rico en antioxidantes:</strong> Neutraliza radicales libres previniendo el envejecimiento.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-amber-900/10 text-xs font-medium text-capirona-dark flex items-center justify-between">
+            <span>Ideal para pieles maduras o con manchas</span>
+            <i data-lucide="sparkles" class="w-4 h-4"></i>
+          </div>
+        </div>
+
+        <!-- Ingredient 3: Sangre de Grado -->
+        <div class="rounded-3xl bg-white border border-sangre/20 p-8 shadow-sm hover:shadow-xl transition-all duration-300 relative group flex flex-col justify-between">
+          <div class="space-y-6">
+            <div class="w-14 h-14 rounded-2xl bg-sangre-light text-sangre flex items-center justify-center group-hover:scale-110 transition-transform">
+              <i data-lucide="shield-plus" class="w-7 h-7"></i>
+            </div>
+            
+            <div>
+              <span class="text-xs font-semibold text-sangre uppercase tracking-wider">Savia Protectora</span>
+              <h3 class="font-serif text-2xl font-bold text-amazonia mt-1">Sangre de Grado</h3>
+              <p class="text-xs italic text-tierra/60 mt-0.5 font-serif">Croton lechleri</p>
+            </div>
+
+            <p class="text-sm text-tierra/80 leading-relaxed">
+              La savia roja de leyenda, utilizada desde tiempos ancestrales por los pueblos originarios. Contiene <em>taspina</em>, un alcaloide célebre por acelerar drásticamente los procesos curativos de la piel.
+            </p>
+
+            <div class="space-y-2 pt-2 border-t border-amber-900/10">
+              <h5 class="text-xs font-bold uppercase tracking-wider text-amazonia">Propiedades Principales:</h5>
+              <ul class="text-xs text-tierra/80 space-y-1.5">
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-sangre flex-shrink-0 mt-0.5"></i>
+                  <span><strong>Cicatrizante milenario:</strong> Sella microlesiones y favorece la síntesis de colágeno.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-sangre flex-shrink-0 mt-0.5"></i>
+                  <span><strong>Efecto segunda piel:</strong> Forma una película protectora contra la polución.</span>
+                </li>
+                <li class="flex items-start gap-2">
+                  <i data-lucide="check" class="w-3.5 h-3.5 text-sangre flex-shrink-0 mt-0.5"></i>
+                  <span><strong>Antioxidante supremo:</strong> Mucho más potente que la vitamina C vegetal.</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="mt-6 pt-4 border-t border-amber-900/10 text-xs font-medium text-sangre-dark flex items-center justify-between">
+            <span>Ideal para todo tipo de piel y cicatrices</span>
+            <i data-lucide="sparkles" class="w-4 h-4"></i>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 3: Product Catalog -->
+  <section id="productos" class="py-20 bg-white relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div class="max-w-2xl space-y-4">
+          <span class="text-xs uppercase tracking-widest font-bold text-selva-600 bg-selva-100 px-3 py-1 rounded-full">
+            Nuestros Productos Artesanales
+          </span>
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-amazonia">
+            Jabones Creados con Amor por lo Natural
+          </h2>
+          <p class="text-tierra/80 text-base">
+            Cada jabón es elaborado a mano mediante saponificación en frío, curado durante 4 a 6 semanas para preservar intactos los principios activos de la selva.
+          </p>
+        </div>
+
+        <!-- Filter / Category Buttons -->
+        <div class="flex items-center gap-2 p-1 bg-selva-50 rounded-2xl border border-selva-200">
+          <button class="filter-btn active px-4 py-2 rounded-xl text-xs font-semibold bg-amazonia text-white transition-all" data-category="all">Todos</button>
+          <button class="filter-btn px-4 py-2 rounded-xl text-xs font-medium text-tierra/70 hover:text-amazonia transition-all" data-category="individual">Individuales</button>
+          <button class="filter-btn px-4 py-2 rounded-xl text-xs font-medium text-tierra/70 hover:text-amazonia transition-all" data-category="packs">Kits Especiales</button>
+        </div>
+      </div>
+
+      <!-- Products Grid -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+        
+        <!-- Product 1: Copaiba -->
+        <div class="product-card group rounded-3xl bg-crema border border-amber-900/10 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="individual">
+          <div>
+            <!-- Product Header Visual -->
+            <div class="h-56 bg-gradient-to-br from-amber-100 via-copaiba-light to-amber-200 p-6 flex flex-col justify-between relative overflow-hidden">
+              <div class="flex justify-between items-start z-10">
+                <span class="px-3 py-1 rounded-full bg-white/80 backdrop-blur-md text-copaiba-dark font-semibold text-xs border border-copaiba/30">
+                  Purificante & Cicatrizante
+                </span>
+                <span class="text-xs font-medium text-tierra/60 bg-white/60 px-2.5 py-0.5 rounded-full">100g</span>
+              </div>
+              <div class="my-auto text-center transform group-hover:scale-105 transition-transform duration-300">
+                <div class="w-24 h-24 mx-auto rounded-2xl bg-amber-800/15 border-2 border-dashed border-amber-700/30 flex items-center justify-center text-copaiba-dark shadow-inner">
+                  <i data-lucide="soap" class="w-12 h-12"></i>
+                </div>
+              </div>
+              <div class="z-10 flex justify-between items-center text-xs text-tierra/70">
+                <span>Aroma amaderado & balsámico</span>
+                <span class="font-bold text-amazonia">Saponificado en frío</span>
+              </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="p-6 space-y-4">
+              <div class="space-y-1">
+                <h3 class="font-serif text-2xl font-bold text-amazonia group-hover:text-selva-700 transition-colors">
+                  Jabón de Copaiba
+                </h3>
+                <p class="text-xs text-tierra/60">Piel sensible, mixta, propensa al acné o dermatitis</p>
+              </div>
+
+              <p class="text-sm text-tierra/80 leading-relaxed">
+                Formulado con aceite de copaiba silvestre y mantecas vegetales nutritivas. Limpia profundamente respetando la barrera cutánea sin resecar.
+              </p>
+
+              <!-- Mini Benefits tags -->
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="text-[11px] px-2.5 py-1 rounded-md bg-selva-100 text-selva-800 font-medium">Calmante</span>
+                <span class="text-[11px] px-2.5 py-1 rounded-md bg-selva-100 text-selva-800 font-medium">Regula Grasa</span>
+                <span class="text-[11px] px-2.5 py-1 rounded-md bg-selva-100 text-selva-800 font-medium">Antibacteriano</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Action Buttons -->
+          <div class="p-6 pt-0 flex gap-3">
+            <button class="open-modal-btn flex-1 py-3 px-4 rounded-xl border border-amazonia/30 text-amazonia text-xs font-semibold hover:bg-amazonia hover:text-white transition-all"
+                    data-title="Jabón Artesanal de Copaiba"
+                    data-subtitle="Bálsamo Purificante & Cicatrizante Ancestral"
+                    data-origin="Comunidad Nativa de Infierno, Madre de Dios"
+                    data-desc="Nuestro jabón de Copaiba es una caricia terapéutica directa del bosque tropical. Es especialmente recomendado para personas con piel reactiva, tendencia a brotes o irritaciones. El aceite resinoso de copaiba posee compuestos bioactivos (sesquiterpenos) que ayudan a equilibrar el microbioma cutáneo."
+                    data-ingredients="Aceite de copaiba virgen (Copaifera officinalis), aceite de coco saponificado, aceite de oliva virgen extra, manteca de cacao amazónico, agua de vertiente purificada, extracto botánico natural."
+                    data-usage="Frotar con agua tibia entre las palmas hasta formar una espuma cremosa y suave. Masajear sobre rostro y cuerpo, dejar actuar 1 minuto y enjuagar con abundante agua. Conservar en jabonera con drenaje.">
+              Ver Detalles
+            </button>
+            <a href="https://wa.me/?text=Hola%2C%20quisiera%20pedir%20informaci%C3%B3n%20sobre%20el%20Jab%C3%B3n%20de%20Copaiba%20de%20Ebio%20Cosmetic" 
+               target="_blank"
+               class="p-3 rounded-xl bg-selva-700 text-white hover:bg-selva-800 transition-colors shadow-sm"
+               title="Consultar por WhatsApp">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 2: Capirona -->
+        <div class="product-card group rounded-3xl bg-crema border border-amber-900/10 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="individual">
+          <div>
+            <!-- Product Header Visual -->
+            <div class="h-56 bg-gradient-to-br from-amber-50 via-capirona-light to-amber-100 p-6 flex flex-col justify-between relative overflow-hidden">
+              <div class="flex justify-between items-start z-10">
+                <span class="px-3 py-1 rounded-full bg-white/80 backdrop-blur-md text-capirona-dark font-semibold text-xs border border-capirona/30">
+                  Antiedad & Renovador
+                </span>
+                <span class="text-xs font-medium text-tierra/60 bg-white/60 px-2.5 py-0.5 rounded-full">100g</span>
+              </div>
+              <div class="my-auto text-center transform group-hover:scale-105 transition-transform duration-300">
+                <div class="w-24 h-24 mx-auto rounded-2xl bg-amber-900/15 border-2 border-dashed border-amber-800/30 flex items-center justify-center text-capirona shadow-inner">
+                  <i data-lucide="soap" class="w-12 h-12"></i>
+                </div>
+              </div>
+              <div class="z-10 flex justify-between items-center text-xs text-tierra/70">
+                <span>Aroma herbal & fresco</span>
+                <span class="font-bold text-amazonia">Saponificado en frío</span>
+              </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="p-6 space-y-4">
+              <div class="space-y-1">
+                <h3 class="font-serif text-2xl font-bold text-amazonia group-hover:text-selva-700 transition-colors">
+                  Jabón de Capirona
+                </h3>
+                <p class="text-xs text-tierra/60">Piel madura, seca o con manchas solares</p>
+              </div>
+
+              <p class="text-sm text-tierra/80 leading-relaxed">
+                Elaborado con infusión y extracto concentrado de corteza de capirona. Estimula la renovación de la epidermis, ayudando a unificar el tono y aportar luminosidad.
+              </p>
+
+              <!-- Mini Benefits tags -->
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="text-[11px] px-2.5 py-1 rounded-md bg-selva-100 text-selva-800 font-medium">Atenúa Manchas</span>
+                <span class="text-[11px] px-2.5 py-1 rounded-md bg-selva-100 text-selva-800 font-medium">Reafirmante</span>
+                <span class="text-[11px] px-2.5 py-1 rounded-md bg-selva-100 text-selva-800 font-medium">Antioxidante</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Action Buttons -->
+          <div class="p-6 pt-0 flex gap-3">
+            <button class="open-modal-btn flex-1 py-3 px-4 rounded-xl border border-amazonia/30 text-amazonia text-xs font-semibold hover:bg-amazonia hover:text-white transition-all"
+                    data-title="Jabón Artesanal de Capirona"
+                    data-subtitle="El Secreto Botánico de la Eterna Renovación"
+                    data-origin="Comunidad Nativa de Infierno, Madre de Dios"
+                    data-desc="Inspirado en la muda constante de la corteza del árbol de capirona, este jabón ayuda a desvanecer suavemente las capas superficiales opacas de la piel. Es un excelente tratamiento natural para pieles expuestas a la intemperie, radiación solar o con signos de cansancio dérmico."
+                    data-ingredients="Extracto puro de corteza de capirona (Calycophyllum spruceanum), aceite de almendras dulces, aceite de coco virgen, manteca de copoazú, glicerina vegetal natural obtenida en el proceso, aceites esenciales suaves."
+                    data-usage="Aplicar mañana y noche sobre la piel húmeda realizando suaves movimientos circulares ascendentes para promover la microcirculación. Enjuagar con agua fresca.">
+              Ver Detalles
+            </button>
+            <a href="https://wa.me/?text=Hola%2C%20quisiera%20pedir%20informaci%C3%B3n%20sobre%20el%20Jab%C3%B3n%20de%20Capirona%20de%20Ebio%20Cosmetic" 
+               target="_blank"
+               class="p-3 rounded-xl bg-selva-700 text-white hover:bg-selva-800 transition-colors shadow-sm"
+               title="Consultar por WhatsApp">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 3: Sangre de Grado -->
+        <div class="product-card group rounded-3xl bg-crema border border-amber-900/10 overflow-hidden shadow-sm hover:shadow-xl transition-all duration-300 flex flex-col justify-between" data-category="individual">
+          <div>
+            <!-- Product Header Visual -->
+            <div class="h-56 bg-gradient-to-br from-rose-100 via-sangre-light to-red-100 p-6 flex flex-col justify-between relative overflow-hidden">
+              <div class="flex justify-between items-start z-10">
+                <span class="px-3 py-1 rounded-full bg-white/80 backdrop-blur-md text-sangre-dark font-semibold text-xs border border-sangre/30">
+                  Reparador & Colágeno Natural
+                </span>
+                <span class="text-xs font-medium text-tierra/60 bg-white/60 px-2.5 py-0.5 rounded-full">100g</span>
+              </div>
+              <div class="my-auto text-center transform group-hover:scale-105 transition-transform duration-300">
+                <div class="w-24 h-24 mx-auto rounded-2xl bg-red-900/15 border-2 border-dashed border-red-700/30 flex items-center justify-center text-sangre shadow-inner">
+                  <i data-lucide="soap" class="w-12 h-12"></i>
+                </div>
+              </div>
+              <div class="z-10 flex justify-between items-center text-xs text-tierra/70">
+                <span>Aroma cálido & resinoso</span>
+                <span class="font-bold text-amazonia">Saponificado en frío</span>
+              </div>
+            </div>
+
+            <!-- Product Details -->
+            <div class="p-6 space-y-4">
+              <div class="space-y-1">
+                <h3 class="font-serif text-2xl font-bold text-amazonia group-hover:text-selva-700 transition-colors">
+                  Jabón de Sangre de Grado
+                </h3>
+                <p class="text-xs text-tierra/60">Todo tipo de piel, piel agredida o expuesta</p>
+              </div>
+
+              <p class="text-sm text-tierra/80 leading-relaxed">
+                Enriquecido con savia pura de sangre de drago cosechada éticamente. Brinda una potente acción regeneradora y astringente que refuerza la salud de la piel.
+              </p>
+
+              <!-- Mini Benefits tags -->
+              <div class="flex flex-wrap gap-1.5 pt-1">
+                <span class="text-[11px] px-2.5 py-1 rounded-md bg-selva-100 text-selva-800 font-medium">Cicatrización Rápida</span>
+                <span class="text-[11px] px-2.5 py-1 rounded-md bg-selva-100 text-selva-800 font-medium">Efecto Tensor</span>
+                <span class="text-[11px] px-2.5 py-1 rounded-md bg-selva-100 text-selva-800 font-medium">Protector Celular</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product Action Buttons -->
+          <div class="p-6 pt-0 flex gap-3">
+            <button class="open-modal-btn flex-1 py-3 px-4 rounded-xl border border-amazonia/30 text-amazonia text-xs font-semibold hover:bg-amazonia hover:text-white transition-all"
+                    data-title="Jabón Artesanal de Sangre de Grado"
+                    data-subtitle="La Savia Roja Milenaria de Curación"
+                    data-origin="Comunidad Nativa de Infierno, Madre de Dios"
+                    data-desc="La sangre de grado es uno de los tesoros más respetados de la Amazonía. Al entrar en contacto con la piel, sus polifenoles y el alcaloide taspina promueven la contracción de heridas leves, calman la irritación tras la afeitada o quemaduras leves por el sol, y fortalecen la elasticidad de las fibras elásticas."
+                    data-ingredients="Savia pura de sangre de grado (Croton lechleri), aceite de oliva macerado en hierbas locales, aceite de ricino, aceite de coco orgánico, manteca de cacao cruda, vitamina E natural."
+                    data-usage="Generar espuma con agua tibia y masajear la zona deseada. Es idóneo para uso facial y corporal diario. Enjuagar completamente.">
+              Ver Detalles
+            </button>
+            <a href="https://wa.me/?text=Hola%2C%20quisiera%20pedir%20informaci%C3%B3n%20sobre%20el%20Jab%C3%B3n%20de%20Sangre%20de%20Grado%20de%20Ebio%20Cosmetic" 
+               target="_blank"
+               class="p-3 rounded-xl bg-selva-700 text-white hover:bg-selva-800 transition-colors shadow-sm"
+               title="Consultar por WhatsApp">
+              <i data-lucide="message-circle" class="w-4 h-4"></i>
+            </a>
+          </div>
+        </div>
+
+        <!-- Product 4: Kit Trilogía Amazónica (Pack) -->
+        <div class="product-card group rounded-3xl bg-gradient-to-br from-selva-900 to-amazonia text-white border border-selva-700/50 overflow-hidden shadow-lg hover:shadow-2xl transition-all duration-300 flex flex-col justify-between md:col-span-2 lg:col-span-3" data-category="packs">
+          <div class="p-8 sm:p-10 grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+            
+            <div class="lg:col-span-7 space-y-4">
+              <div class="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-copaiba/20 text-copaiba-light text-xs font-semibold border border-copaiba/30">
+                <i data-lucide="gift" class="w-3.5 h-3.5"></i>
+                <span>Edición Especial Comunitaria</span>
+              </div>
+              <h3 class="font-serif text-3xl sm:text-4xl font-bold text-white">
+                Kit "Trilogía Amazónica"
+              </h3>
+              <p class="text-emerald-100/80 text-sm sm:text-base leading-relaxed">
+                El ritual integral de la selva en una presentación sustentable. Incluye los 3 jabones artesanales (Copaiba, Capirona y Sangre de Grado) envueltos en fibras naturales tejidas por artesanas de la Comunidad Nativa de Infierno, acompañados de una jabonera ecológica de madera recuperada.
+              </p>
+              
+              <div class="grid grid-cols-1 sm:grid-cols-3 gap-3 pt-2">
+                <div class="p-3 rounded-xl bg-white/5 border border-white/10 text-xs">
+                  <p class="font-bold text-copaiba">1. Purifica</p>
+                  <p class="text-emerald-200/70 text-[11px]">Con Jabón de Copaiba</p>
+                </div>
+                <div class="p-3 rounded-xl bg-white/5 border border-white/10 text-xs">
+                  <p class="font-bold text-amber-300">2. Renueva</p>
+                  <p class="text-emerald-200/70 text-[11px]">Con Jabón de Capirona</p>
+                </div>
+                <div class="p-3 rounded-xl bg-white/5 border border-white/10 text-xs">
+                  <p class="font-bold text-rose-300">3. Repara</p>
+                  <p class="text-emerald-200/70 text-[11px]">Con Sangre de Grado</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="lg:col-span-5 flex flex-col justify-center items-center text-center p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm space-y-5">
+              <div class="w-16 h-16 rounded-2xl bg-copaiba/20 flex items-center justify-center text-copaiba">
+                <i data-lucide="package" class="w-8 h-8"></i>
+              </div>
+              <div>
+                <p class="text-xs uppercase tracking-wider text-emerald-300 font-semibold">Experiencia Completa</p>
+                <p class="font-serif text-2xl font-bold text-white">3 Barras de 100g + Jabonera</p>
+                <p class="text-xs text-emerald-200/70 mt-1">Presentación de regalo 100% biodegradable</p>
+              </div>
+
+              <div class="w-full flex flex-col sm:flex-row gap-3">
+                <button class="open-modal-btn flex-1 py-3 px-4 rounded-xl bg-white/10 hover:bg-white/20 text-white text-xs font-semibold border border-white/20 transition-all"
+                        data-title="Kit Trilogía Amazónica"
+                        data-subtitle="El Ritual Completo de Cuidado y Regeneración"
+                        data-origin="Comunidad Nativa de Infierno, Madre de Dios"
+                        data-desc="Este kit reúne la sabiduría ancestral completa de la Comunidad Nativa de Infierno. Permite alternar el uso según las necesidades diarias de tu piel: purificar en profundidad con copaiba, tonificar e iluminar con capirona, y sanar o nutrir con sangre de grado. Incluye folleto explicativo sobre las familias recolectoras de la comunidad."
+                        data-ingredients="3 barras artesanales completas (Copaiba, Capirona, Sangre de Grado) + estuche de caña brava / yute ecológico + jabonera artesanal de madera sostenible."
+                        data-usage="Alternar los jabones según la rutina: Jabón de Copaiba en la mañana para control oleoso, Capirona para baño rejuvenecedor, y Sangre de Grado para cuidado reparador nocturno.">
+                  Ver Detalles del Kit
+                </button>
+                <a href="https://wa.me/?text=Hola%2C%20quisiera%20solicitar%20el%20Kit%20Trilog%C3%ADa%20Amaz%C3%B3nica%20de%20Ebio%20Cosmetic" 
+                   target="_blank"
+                   class="flex-1 py-3 px-4 rounded-xl bg-copaiba hover:bg-copaiba-dark text-amazonia font-bold text-xs transition-colors flex items-center justify-center gap-2">
+                  <i data-lucide="message-circle" class="w-4 h-4"></i>
+                  <span>Pedir Kit por WhatsApp</span>
+                </a>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 4: Artisanal Process Step by Step -->
+  <section id="proceso" class="py-20 bg-selva-50/60 border-y border-amber-900/10 relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto mb-16 space-y-4">
+        <span class="text-xs uppercase tracking-widest font-bold text-selva-600 bg-selva-100 px-3 py-1 rounded-full">
+          Tradición y Consciencia
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold text-amazonia">
+          El Proceso de Elaboración Artesanal
+        </h2>
+        <p class="text-tierra/80 text-base sm:text-lg">
+          Cada barra de jabón Ebio Cosmetic recorre un camino respetuoso, desde los árboles sagrados de la selva hasta tu hogar.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        
+        <!-- Step 1 -->
+        <div class="p-6 rounded-3xl bg-white border border-selva-200/70 shadow-sm relative group hover:shadow-lg transition-all">
+          <div class="w-10 h-10 rounded-full bg-selva-600 text-white font-bold text-sm flex items-center justify-center mb-4">
+            1
+          </div>
+          <h4 class="font-serif font-bold text-amazonia text-lg mb-2">Recolección Consciente</h4>
+          <p class="text-xs text-tierra/70 leading-relaxed">
+            Identificamos los árboles maduros en el bosque de la Comunidad Nativa de Infierno. Extraemos la resina y corteza sin cortar el tronco, respetando el ciclo biológico de la planta.
+          </p>
+        </div>
+
+        <!-- Step 2 -->
+        <div class="p-6 rounded-3xl bg-white border border-selva-200/70 shadow-sm relative group hover:shadow-lg transition-all">
+          <div class="w-10 h-10 rounded-full bg-copaiba text-amazonia font-bold text-sm flex items-center justify-center mb-4">
+            2
+          </div>
+          <h4 class="font-serif font-bold text-amazonia text-lg mb-2">Saponificación en Frío</h4>
+          <p class="text-xs text-tierra/70 leading-relaxed">
+            Elaboramos la base de aceites vegetales a bajas temperaturas. Esta técnica ancestral asegura que los bioactivos y vitaminas de la copaiba, capirona y sangre de grado no se degraden por el calor.
+          </p>
+        </div>
+
+        <!-- Step 3 -->
+        <div class="p-6 rounded-3xl bg-white border border-selva-200/70 shadow-sm relative group hover:shadow-lg transition-all">
+          <div class="w-10 h-10 rounded-full bg-capirona text-white font-bold text-sm flex items-center justify-center mb-4">
+            3
+          </div>
+          <h4 class="font-serif font-bold text-amazonia text-lg mb-2">Curado Paciente (40 Días)</h4>
+          <p class="text-xs text-tierra/70 leading-relaxed">
+            Los jabones reposan en estantes ventilados durante 4 a 6 semanas. Es el tiempo necesario para lograr una barra firme, duradera y de espuma cremosa y suave.
+          </p>
+        </div>
+
+        <!-- Step 4 -->
+        <div class="p-6 rounded-3xl bg-white border border-selva-200/70 shadow-sm relative group hover:shadow-lg transition-all">
+          <div class="w-10 h-10 rounded-full bg-sangre text-white font-bold text-sm flex items-center justify-center mb-4">
+            4
+          </div>
+          <h4 class="font-serif font-bold text-amazonia text-lg mb-2">Empaque Cero Plástico</h4>
+          <p class="text-xs text-tierra/70 leading-relaxed">
+            Cada unidad es envuelta a mano con papel kraft reciclado y fibras naturales de la zona. 100% libre de plásticos y totalmente biodegradable en la tierra.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 5: Impact & Community Commitment -->
+  <section id="impacto" class="py-20 bg-amazonia text-white relative overflow-hidden">
+    <!-- Ambient Decor -->
+    <div class="absolute -top-32 -right-32 w-96 h-96 bg-selva-700/30 rounded-full blur-3xl pointer-events-none"></div>
+    <div class="absolute -bottom-32 -left-32 w-96 h-96 bg-copaiba/20 rounded-full blur-3xl pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- Left Side: Community Message -->
+        <div class="lg:col-span-7 space-y-6">
+          <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-emerald-500/10 border border-emerald-400/20 text-emerald-300 text-xs font-semibold">
+            <i data-lucide="shield-check" class="w-4 h-4"></i>
+            <span>Desarrollo con Identidad Cultural</span>
+          </div>
+
+          <h2 class="font-serif text-3xl sm:text-4xl lg:text-5xl font-bold leading-tight">
+            Cuidamos la Selva Porque la Selva es Nuestro Hogar
+          </h2>
+
+          <p class="text-emerald-100/90 text-base sm:text-lg leading-relaxed">
+            En la Comunidad Nativa de Infierno entendemos que la verdadera cosmética no puede existir a costa de la destrucción ambiental. Cada barra que adquieres apoya de manera directa la economía de familias indígenas y promueve la conservación activa de los bosques de Tambopata.
+          </p>
+
+          <div class="space-y-4 pt-2">
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-emerald-800/80 flex items-center justify-center text-copaiba flex-shrink-0">
+                <i data-lucide="heart" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-serif font-bold text-white text-base">Comercio Justo y Revalorización Local</h4>
+                <p class="text-xs text-emerald-200/80 mt-1">El valor generado permanece en la comunidad, empoderando artesanos, mujeres y jóvenes en el manejo sustentable de los recursos.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-emerald-800/80 flex items-center justify-center text-emerald-300 flex-shrink-0">
+                <i data-lucide="sprout" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-serif font-bold text-white text-base">Defensa de la Biodiversidad</h4>
+                <p class="text-xs text-emerald-200/80 mt-1">Al darle un valor económico sostenible al bosque en pie, frenamos la deforestación y la tala ilegal en nuestra región.</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4">
+              <div class="w-10 h-10 rounded-xl bg-emerald-800/80 flex items-center justify-center text-rose-300 flex-shrink-0">
+                <i data-lucide="globe-2" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-serif font-bold text-white text-base">Cero Contaminación Hídrica</h4>
+                <p class="text-xs text-emerald-200/80 mt-1">Al ser 100% biodegradables, nuestras aguas de desecho en el baño no contaminan los ríos amazónicos ni los mantos freáticos.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Side: Impact Stats Grid -->
+        <div class="lg:col-span-5 grid grid-cols-2 gap-4">
+          <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm text-center space-y-2">
+            <i data-lucide="trees" class="w-8 h-8 text-copaiba mx-auto"></i>
+            <p class="font-serif text-3xl font-bold text-white">+500</p>
+            <p class="text-xs text-emerald-200/80">Árboles monitoreados y protegidos</p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm text-center space-y-2">
+            <i data-lucide="users" class="w-8 h-8 text-emerald-300 mx-auto"></i>
+            <p class="font-serif text-3xl font-bold text-white">100%</p>
+            <p class="text-xs text-emerald-200/80">Elaboración comunitaria local</p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm text-center space-y-2">
+            <i data-lucide="trash-2" class="w-8 h-8 text-rose-300 mx-auto"></i>
+            <p class="font-serif text-3xl font-bold text-white">0%</p>
+            <p class="text-xs text-emerald-200/80">Plásticos de un solo uso</p>
+          </div>
+
+          <div class="p-6 rounded-2xl bg-white/5 border border-white/10 backdrop-blur-sm text-center space-y-2">
+            <i data-lucide="sparkles" class="w-8 h-8 text-amber-300 mx-auto"></i>
+            <p class="font-serif text-3xl font-bold text-white">0%</p>
+            <p class="text-xs text-emerald-200/80">Sulfatos, parabenos o tóxicos</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 6: FAQ Accordion -->
+  <section class="py-20 bg-white">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center mb-12 space-y-3">
+        <span class="text-xs uppercase tracking-widest font-bold text-selva-600 bg-selva-100 px-3 py-1 rounded-full">
+          Preguntas Frecuentes
+        </span>
+        <h2 class="font-serif text-3xl sm:text-4xl font-bold text-amazonia">
+          Todo lo que Deseas Saber
+        </h2>
+        <p class="text-tierra/70 text-sm">
+          Resolvemos tus dudas sobre el uso, conservación y beneficios de nuestros jabones artesanales.
+        </p>
+      </div>
+
+      <div class="space-y-4" id="faqAccordion">
+        
+        <!-- FAQ 1 -->
+        <div class="faq-item rounded-2xl border border-amber-900/10 bg-crema overflow-hidden">
+          <button class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center gap-4 text-amazonia font-serif font-bold text-base hover:text-selva-700 transition-colors">
+            <span>¿Por qué elegir jabón artesanal en frío en lugar de uno industrial?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-selva-600 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-4 text-xs sm:text-sm text-tierra/80 leading-relaxed border-t border-amber-900/5 pt-3">
+            Los jabones industriales suelen retirar la glicerina natural para venderla a la industria cosmética, reemplazándola con detergentes sintéticos derivados del petróleo. Nuestro jabón artesanal saponificado en frío conserva el 100% de la glicerina natural, hidratando activamente tu piel y aportando los principios activos de la copaiba, capirona y sangre de grado.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="faq-item rounded-2xl border border-amber-900/10 bg-crema overflow-hidden">
+          <button class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center gap-4 text-amazonia font-serif font-bold text-base hover:text-selva-700 transition-colors">
+            <span>¿Cómo debo cuidar mi jabón artesanal para que dure más tiempo?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-selva-600 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-4 text-xs sm:text-sm text-tierra/80 leading-relaxed border-t border-amber-900/5 pt-3">
+            Al no contener endurecedores químicos, es fundamental mantener la barra en una jabonera con buen drenaje donde no se acumule agua estancada. Si se mantiene seca entre uso y uso, una barra de 100g rinde entre 30 y 45 baños.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="faq-item rounded-2xl border border-amber-900/10 bg-crema overflow-hidden">
+          <button class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center gap-4 text-amazonia font-serif font-bold text-base hover:text-selva-700 transition-colors">
+            <span>¿Son aptos para niños o personas con piel muy delicada?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-selva-600 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-4 text-xs sm:text-sm text-tierra/80 leading-relaxed border-t border-amber-900/5 pt-3">
+            Sí. Nuestros productos son libres de sulfatos, parabenos, siliconas y perfumes artificiales. En particular, el jabón de Copaiba es ampliamente valorado por personas que padecen dermatitis o piel seca sensible debido a su efecto calmante natural.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="faq-item rounded-2xl border border-amber-900/10 bg-crema overflow-hidden">
+          <button class="faq-btn w-full px-6 py-4 text-left flex justify-between items-center gap-4 text-amazonia font-serif font-bold text-base hover:text-selva-700 transition-colors">
+            <span>¿Cómo se realiza el envío y los pedidos al por mayor?</span>
+            <i data-lucide="chevron-down" class="faq-icon w-5 h-5 text-selva-600 transition-transform duration-300"></i>
+          </button>
+          <div class="faq-content hidden px-6 pb-4 text-xs sm:text-sm text-tierra/80 leading-relaxed border-t border-amber-900/5 pt-3">
+            Realizamos despachos tanto a nivel local en Madre de Dios como envíos a todo el Perú y solicitudes personalizadas para eventos sostenibles o comercios ecológicos. Puedes comunicarte directamente a través de nuestro formulario o botón de WhatsApp para coordinar tu entrega.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Section 7: Contact & Order Generator Form -->
+  <section id="contacto" class="py-20 bg-selva-50/50 border-t border-amber-900/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+        
+        <!-- Contact Information -->
+        <div class="lg:col-span-5 space-y-8">
+          <div class="space-y-3">
+            <span class="text-xs uppercase tracking-widest font-bold text-selva-600 bg-selva-100 px-3 py-1 rounded-full">
+              Ponte en Contacto
+            </span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-amazonia">
+              Lleva la Magia de la Amazonía a tu Vida
+            </h2>
+            <p class="text-tierra/80 text-sm leading-relaxed">
+              ¿Deseas realizar un pedido, consultar sobre disponibilidad al por mayor o colaborar con nuestro emprendimiento comunitario? Escríbenos directamente.
+            </p>
+          </div>
+
+          <!-- Info Cards -->
+          <div class="space-y-4">
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-amber-900/10 shadow-sm">
+              <div class="w-10 h-10 rounded-xl bg-selva-100 flex items-center justify-center text-selva-700 flex-shrink-0">
+                <i data-lucide="map-pin" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-serif font-bold text-amazonia text-sm">Ubicación</h4>
+                <p class="text-xs text-tierra/70">Comunidad Nativa de Infierno, Río Tambopata, Madre de Dios - Perú</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-amber-900/10 shadow-sm">
+              <div class="w-10 h-10 rounded-xl bg-copaiba-light flex items-center justify-center text-copaiba-dark flex-shrink-0">
+                <i data-lucide="message-circle" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-serif font-bold text-amazonia text-sm">Atención Directa</h4>
+                <p class="text-xs text-tierra/70">Pedidos rápidos y consultas personalizadas vía WhatsApp</p>
+              </div>
+            </div>
+
+            <div class="flex items-start gap-4 p-4 rounded-2xl bg-white border border-amber-900/10 shadow-sm">
+              <div class="w-10 h-10 rounded-xl bg-sangre-light flex items-center justify-center text-sangre flex-shrink-0">
+                <i data-lucide="github" class="w-5 h-5"></i>
+              </div>
+              <div>
+                <h4 class="font-serif font-bold text-amazonia text-sm">Proyecto de Código Abierto</h4>
+                <a href="https://github.com/ebiocosmetic-star/ebiocosmetic" target="_blank" class="text-xs text-selva-700 hover:underline">
+                  github.com/ebiocosmetic-star/ebiocosmetic
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Interactive Quote / WhatsApp Message Form -->
+        <div class="lg:col-span-7">
+          <div class="p-8 sm:p-10 rounded-3xl bg-white border border-amber-900/10 shadow-md">
+            <h3 class="font-serif text-2xl font-bold text-amazonia mb-2">Generar Pedido o Consulta</h3>
+            <p class="text-xs text-tierra/70 mb-6">Completa este breve formulario para enviar un mensaje preconfigurado directamente a nuestro canal de WhatsApp.</p>
+            
+            <form id="orderForm" class="space-y-5">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="userName" class="block text-xs font-semibold text-amazonia mb-1.5">Tu Nombre</label>
+                  <input type="text" id="userName" required placeholder="Ej. Ana Lucía" 
+                         class="w-full px-4 py-3 rounded-xl border border-amber-900/20 text-sm focus:outline-none focus:ring-2 focus:ring-selva-500 focus:border-transparent transition-all">
+                </div>
+                <div>
+                  <label for="userCity" class="block text-xs font-semibold text-amazonia mb-1.5">Ciudad / Destino</label>
+                  <input type="text" id="userCity" required placeholder="Ej. Puerto Maldonado / Lima" 
+                         class="w-full px-4 py-3 rounded-xl border border-amber-900/20 text-sm focus:outline-none focus:ring-2 focus:ring-selva-500 focus:border-transparent transition-all">
+                </div>
+              </div>
+
+              <div>
+                <label for="productSelection" class="block text-xs font-semibold text-amazonia mb-1.5">Producto de Interés</label>
+                <select id="productSelection" 
+                        class="w-full px-4 py-3 rounded-xl border border-amber-900/20 text-sm focus:outline-none focus:ring-2 focus:ring-selva-500 focus:border-transparent transition-all bg-white">
+                  <option value="Kit Trilogía Amazónica (3 jabones + jabonera)">Kit Trilogía Amazónica (Pack Completo)</option>
+                  <option value="Jabón de Copaiba (Purificante / Piel sensible)">Jabón Artesanal de Copaiba (100g)</option>
+                  <option value="Jabón de Capirona (Antiedad / Antimanchas)">Jabón Artesanal de Capirona (100g)</option>
+                  <option value="Jabón de Sangre de Grado (Cicatrizante / Reparador)">Jabón Artesanal de Sangre de Grado (100g)</option>
+                  <option value="Lote al por mayor / Pedido Corporativo">Lote al por mayor / Emprendimiento ecológico</option>
+                </select>
+              </div>
+
+              <div>
+                <label for="userMessage" class="block text-xs font-semibold text-amazonia mb-1.5">Mensaje o Detalle Adicional</label>
+                <textarea id="userMessage" rows="3" placeholder="¿Cuántas unidades requieres o tienes alguna pregunta específica para tu tipo de piel?" 
+                          class="w-full px-4 py-3 rounded-xl border border-amber-900/20 text-sm focus:outline-none focus:ring-2 focus:ring-selva-500 focus:border-transparent transition-all"></textarea>
+              </div>
+
+              <button type="submit" 
+                      class="w-full py-4 rounded-xl bg-amazonia text-white font-medium text-sm hover:bg-selva-800 shadow-md hover:shadow-lg transition-all flex items-center justify-center gap-2">
+                <i data-lucide="send" class="w-4 h-4 text-copaiba"></i>
+                <span>Enviar Pedido por WhatsApp</span>
+              </button>
+            </form>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Product Detail Modal Popup -->
+  <div id="productModal" class="fixed inset-0 z-50 hidden bg-black/60 backdrop-blur-sm flex items-center justify-center p-4 sm:p-6 opacity-0 transition-opacity duration-300">
+    <div class="bg-white rounded-3xl max-w-xl w-full p-6 sm:p-8 shadow-2xl border border-amber-900/10 relative transform scale-95 transition-transform duration-300 max-h-[90vh] overflow-y-auto">
+      
+      <!-- Close Button -->
+      <button id="closeModalBtn" class="absolute top-5 right-5 p-2 rounded-full text-tierra/60 hover:text-amazonia hover:bg-selva-100 transition-colors" aria-label="Cerrar modal">
+        <i data-lucide="x" class="w-5 h-5"></i>
+      </button>
+
+      <div class="space-y-4">
+        <div>
+          <span id="modalOrigin" class="text-xs uppercase tracking-wider font-semibold text-selva-600 bg-selva-100 px-3 py-1 rounded-full"></span>
+          <h3 id="modalTitle" class="font-serif text-2xl sm:text-3xl font-bold text-amazonia mt-2"></h3>
+          <p id="modalSubtitle" class="text-xs italic text-tierra/70 mt-0.5"></p>
+        </div>
+
+        <div class="p-4 rounded-2xl bg-selva-50 border border-selva-200/70">
+          <h5 class="text-xs font-bold uppercase tracking-wider text-amazonia mb-1">Descripción:</h5>
+          <p id="modalDesc" class="text-xs sm:text-sm text-tierra/80 leading-relaxed"></p>
+        </div>
+
+        <div>
+          <h5 class="text-xs font-bold uppercase tracking-wider text-amazonia mb-1">Ingredientes Naturales:</h5>
+          <p id="modalIngredients" class="text-xs text-tierra/70 leading-relaxed bg-crema p-3 rounded-xl border border-amber-900/10"></p>
+        </div>
+
+        <div>
+          <h5 class="text-xs font-bold uppercase tracking-wider text-amazonia mb-1">Ritual de Uso Recomendado:</h5>
+          <p id="modalUsage" class="text-xs text-tierra/70 leading-relaxed"></p>
+        </div>
+
+        <div class="pt-4 border-t border-amber-900/10 flex flex-col sm:flex-row gap-3">
+          <a id="modalWhatsAppBtn" href="#" target="_blank" class="flex-1 py-3 px-4 rounded-xl bg-amazonia hover:bg-selva-800 text-white font-medium text-xs text-center flex items-center justify-center gap-2 transition-all">
+            <i data-lucide="message-circle" class="w-4 h-4 text-copaiba"></i>
+            <span>Pedir este Producto</span>
+          </a>
+          <button id="modalCloseActionBtn" class="py-3 px-6 rounded-xl border border-amber-900/20 text-xs font-semibold text-tierra/80 hover:bg-crema transition-colors">
+            Cerrar
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-selva-950 text-white py-16 border-t border-emerald-900/60">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-10 mb-12">
+        
+        <!-- Col 1: Brand Info -->
+        <div class="space-y-4">
+          <div class="flex items-center gap-2">
+            <div class="w-10 h-10 rounded-xl bg-emerald-800 flex items-center justify-center text-copaiba">
+              <i data-lucide="sparkles" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <span class="font-serif text-xl font-bold text-white">Ebio</span>
+              <span class="font-serif text-xl font-light italic text-copaiba">Cosmetic</span>
+            </div>
+          </div>
+          <p class="text-xs text-emerald-200/70 leading-relaxed">
+            Emprendimiento comunitario de jabones artesanales con ingredientes sagrados de la selva: copaiba, capirona y sangre de grado.
+          </p>
+          <div class="text-[11px] text-emerald-300 font-medium">
+            🌿 Comunidad Nativa de Infierno · Madre de Dios, Perú
+          </div>
+        </div>
+
+        <!-- Col 2: Navigation Links -->
+        <div class="space-y-3">
+          <h4 class="font-serif font-bold text-sm text-copaiba tracking-wider uppercase">Navegación</h4>
+          <ul class="text-xs space-y-2 text-emerald-200/80">
+            <li><a href="#inicio" class="hover:text-white transition-colors">Inicio</a></li>
+            <li><a href="#historia" class="hover:text-white transition-colors">Historia del Proyecto</a></li>
+            <li><a href="#ingredientes" class="hover:text-white transition-colors">Ingredientes Amazónicos</a></li>
+            <li><a href="#productos" class="hover:text-white transition-colors">Catálogo de Jabones</a></li>
+            <li><a href="#impacto" class="hover:text-white transition-colors">Impacto Comunitario</a></li>
+          </ul>
+        </div>
+
+        <!-- Col 3: Principles -->
+        <div class="space-y-3">
+          <h4 class="font-serif font-bold text-sm text-copaiba tracking-wider uppercase">Nuestros Valores</h4>
+          <ul class="text-xs space-y-2 text-emerald-200/80">
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-copaiba"></i> Conservación del bosque</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-copaiba"></i> Comercio justo comunitario</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-copaiba"></i> Cero residuos plásticos</li>
+            <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-copaiba"></i> Saponificación en frío</li>
+          </ul>
+        </div>
+
+        <!-- Col 4: GitHub & Open Source -->
+        <div class="space-y-3">
+          <h4 class="font-serif font-bold text-sm text-copaiba tracking-wider uppercase">Código y Comunidad</h4>
+          <p class="text-xs text-emerald-200/70">
+            Página web y documentación alojada en GitHub para visibilizar el proyecto ante el mundo.
+          </p>
+          <a href="https://github.com/ebiocosmetic-star/ebiocosmetic" target="_blank" 
+             class="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-white/10 hover:bg-white/20 text-xs text-white transition-all border border-white/10">
+            <i data-lucide="github" class="w-4 h-4 text-copaiba"></i>
+            <span>Ver repositorio en GitHub</span>
+          </a>
+        </div>
+
+      </div>
+
+      <div class="pt-8 border-t border-emerald-900/60 flex flex-col sm:flex-row justify-between items-center text-center sm:text-left gap-4 text-xs text-emerald-300/60">
+        <p>&copy; 2026 Ebio Cosmetic. Todos los derechos reservados. Desarrollado con amor por la Amazonía.</p>
+        <p>Inspirado en los saberes ancestrales de la Comunidad Nativa de Infierno.</p>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="main.js"></script>
+</body>
+</html>
